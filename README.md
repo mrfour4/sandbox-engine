@@ -1,7 +1,6 @@
 # Sandbox Engine
 
 This repository provides a secure, self-hosted environment for executing arbitrary code submissions
----
 
 ## ✅ System Requirements
 
@@ -13,7 +12,6 @@ This repository provides a secure, self-hosted environment for executing arbitra
 
 > ⚠️ Judge0 has only been tested on Linux. Windows/Mac are not officially supported.
 
----
 
 ## 🔧 Pre-deployment: GRUB Configuration (Ubuntu 22.04)
 
@@ -44,8 +42,6 @@ This repository provides a secure, self-hosted environment for executing arbitra
    sudo reboot
    ```
 
----
-
 ## 🚀 Deployment Steps
 
 ### 1. Clone the Repository
@@ -68,8 +64,6 @@ POSTGRES_PASSWORD=your_generated_postgres_password
 
 > ⚠️ Do **not** commit this file with secrets in a public repository.
 
----
-
 ### 3. Start Services
 
 ```bash
@@ -79,7 +73,6 @@ docker-compose up -d
 sleep 5
 ```
 
----
 
 ## 🔪 Test Access
 
@@ -91,7 +84,6 @@ http://<YOUR_SERVER_IP>:2358/docs
 
 You should see the Swagger UI to test `/submissions`.
 
----
 
 ## 👎 Stopping the Server
 
@@ -106,8 +98,6 @@ You should see the Swagger UI to test `/submissions`.
   ```bash
   docker-compose stop
   ```
-
----
 
 ## 📬 Example Submission (via `curl`)
 
